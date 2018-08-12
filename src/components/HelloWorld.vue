@@ -1,17 +1,19 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <i class="icomoon"></i>
 
-    <!-- <h2>Contact</h2> -->
+    <img src="../assets/ponz_by_40kino.png" v-on:mouseover="mouseOver" ><br>
+
+    <h1>{{ Ponz }}</h1>
+    &#xe900;
+    <h2>{{ title1 }}</h2>
     <ul>
       <li>
         <a
-          href="https://github.com/ponzliquid"
+          href="https://www.youtube.com/channel/UCcGXRoQwNzjiZzJiXgiCRHA"
           target="_blank"
           class="icon"
         >
-        <i class="fab fa-github fa-2x" />
+        <i class="fab fa-youtube fa-2x" />
         </a>
       </li>
       <li>
@@ -25,15 +27,6 @@
       </li>
       <li>
         <a
-          href="https://www.youtube.com/channel/UCcGXRoQwNzjiZzJiXgiCRHA"
-          target="_blank"
-          class="icon"
-        >
-        <i class="fab fa-youtube fa-2x" />
-        </a>
-      </li>
-      <li>
-        <a
           href="http://www.nicovideo.jp/user/8065114"
           target="_blank"
           class="icon"
@@ -43,8 +36,22 @@
       </li>
     </ul>
 
+    <h2>{{ title2 }}</h2>
     <ul>
       <li>
+        <a
+          href="https://github.com/ponzliquid"
+          target="_blank"
+          class="icon"
+        >
+        <i class="fab fa-github fa-2x" />
+        </a>
+      </li>
+    </ul>
+
+    <h2>{{ title3 }}</h2>
+    <ul>
+        <li>
         <a
           href="https://twitter.com/ponzliquid"
           target="_blank"
@@ -81,7 +88,15 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Ponz-folio'
+      Ponz: 'Ponz',
+      title1: 'Media',
+      title2: 'Dev',
+      title3: 'Contact'
+    }
+  },
+  methods: {
+    mouseOver: function () {
+      console.log('aaaaaaaaa')
     }
   }
 }
@@ -89,22 +104,31 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1{
   font-weight: normal;
+  font-size: xx-large;
+}
+h2{
+  font-weight: normal;
+  font-size: medium;
+  margin-bottom: 0px;
 }
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 64px;
+  margin-bottom: 36px;
 }
 li {
   display: inline-block;
-  margin: 0 32px;
+  padding: 24px;
 }
 a {
   color: #FED766;
 }
 a.icon {
   color: #EFF1F3;
+}
+a:hover {
+  color: #FED766;
 }
 </style>
