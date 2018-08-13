@@ -17,7 +17,7 @@ export default {
     return {
       items: [
         { title: 'Discography', path: '/discography' },
-        { title: 'Ponzliquid', path: '/' },
+        { title: 'Home', path: '/' },
         { title: 'Patronage', path: '/patronage' }
       ]
     }
@@ -45,7 +45,7 @@ li {
   background-color: #EFF1F3;
   border-radius: 10px;
   position: relative;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 li:hover {
