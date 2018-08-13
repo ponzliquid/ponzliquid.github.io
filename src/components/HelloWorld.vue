@@ -18,11 +18,10 @@
     <ul>
       <li>
         <a
-          href=""
           target="_blank"
           class="icon"
         >
-        <i class="fas fa-envelope fa-2x" />
+        <i class="fas fa-envelope fa-2x" @click="openAlertModal(email_msg)" />
         </a>
       </li>
         <li>
@@ -39,9 +38,10 @@
           target="_blank"
           class="icon"
         >
-        <div id="helloworld">
-          <i class="fab fa-discord fa-2x" @click="showModal = true"/>
-          <modal v-if="showModal" @close="showModal = false"></modal>
+        <div>
+          <!-- <i class="fab fa-discord fa-2x" @click="showModal = true"/> -->
+          <!-- <modal v-if="showModal" @close="showModal = false"></modal> -->
+          <i class="fab fa-discord fa-2x" @click="openAlertModal(discord_msg)" />
         </div>
         </a>
       </li>
@@ -60,7 +60,8 @@
 </template>
 
 <script>
-import Modal from './Modal.vue'
+// import Modal from './Modal.vue'
+import modal from '../components/services/modal'
 export default {
   name: 'HelloWorld',
   data () {
@@ -70,15 +71,22 @@ export default {
       title_dev: 'Dev',
       title_contact: 'Contact',
       profile: 'Vocaloid Producer, Trance Composer, Remixer',
-      showModal: false
+      showModal: false,
+      discord_msg: 'UserID: <br><br> #2732<br>',
+      email_msg: 'ponzliquid <br> at <br> gmail.com'
     }
   },
   components: {
-    Modal
+    // Modal,
+    modal
   },
   methods: {
     mouseOver: function () {
       console.log('hover/tap')
+    },
+    openAlertModal (message) {
+      // console.log(message)
+      modal.alert(message)
     }
   }
 }
