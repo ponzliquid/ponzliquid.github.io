@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <myheader></myheader>
-      <div class="wrap-all">
+      <!-- <div class="wrap-all">
         <div class="wrap-all-inner">
           <div class="container-contents">
-            <div class="content wrap">
+            <div class="content wrap"> -->
+              <myheader></myheader>
               <router-view></router-view>
-            </div>
+            <!-- </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div id="modals">
         <component v-for="(modal) in modals" :is="modal.component"  :key="modal.id" :params="modal.params"></component>
       </div>
@@ -50,6 +50,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #EFF1F3;
-  margin: 60px;
+  /* margin: 10px; */
 }
 </style>
