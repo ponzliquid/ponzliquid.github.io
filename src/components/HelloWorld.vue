@@ -36,11 +36,13 @@
       </li>
       <li>
         <a
-          href=""
           target="_blank"
           class="icon"
         >
-        <i class="fab fa-discord fa-2x" />
+        <div id="helloworld">
+          <i class="fab fa-discord fa-2x" @click="showModal = true"/>
+          <modal v-if="showModal" @close="showModal = false"></modal>
+        </div>
         </a>
       </li>
       <li>
@@ -58,6 +60,7 @@
 </template>
 
 <script>
+import Modal from './Modal.vue'
 export default {
   name: 'HelloWorld',
   data () {
@@ -66,8 +69,12 @@ export default {
       title_workd: 'Works',
       title_dev: 'Dev',
       title_contact: 'Contact',
-      profile: 'Vocaloid Producer, Trance Composer, Remixer'
+      profile: 'Vocaloid Producer, Trance Composer, Remixer',
+      showModal: false
     }
+  },
+  components: {
+    Modal
   },
   methods: {
     mouseOver: function () {
