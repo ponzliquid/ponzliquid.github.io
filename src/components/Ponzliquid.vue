@@ -1,5 +1,5 @@
 <template>
-  <div class="ponz">
+  <div>
 
     <!-- <div id="container"> -->
       <img src="../assets/ponz_by_40kino.png" v-on:mouseover="mouseOver">

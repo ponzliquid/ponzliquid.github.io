@@ -40,15 +40,15 @@ export default {
   /* padding: 0; */
   /* position: fixed; */
   /* background-color: #000000; */
-  opacity: 0.99;
+  opacity: 0.9;
 }
 
 ol {
   /* pointer-events: none; */
   position: fixed;
-  height: 50px;
+  height: 80px;
   margin-left: -10px;
-  margin-top: -10px;
+  margin-top: -40px;
   width: 100%;
   display:flex;
   justify-content: center;
@@ -70,7 +70,7 @@ li {
   height: 25px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 15px;
+  margin-top: 45px;
   font-size: 12px;
   background-color: #000000;
   border-radius: 5px;

@@ -3,13 +3,13 @@
 
     <h1>{{ pagetitle }}</h1>
 
-    <div class="spacer">
-    </div>
+    <!-- <div class="spacer">
+    </div> -->
 
     <div id="container">
 
       <div class="sc">
-        <iframe width="500" height="400" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/77993825&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <iframe width="800" height="450" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/77993825&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
       </div>
 
       <div class="spacer">
