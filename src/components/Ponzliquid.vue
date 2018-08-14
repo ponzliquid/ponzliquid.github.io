@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="ponz">
 
     <!-- <div id="container"> -->
       <img src="../assets/ponz_by_40kino.png" v-on:mouseover="mouseOver">
@@ -63,7 +63,7 @@
 // import Modal from './Modal.vue'
 import modal from '../components/services/modal'
 export default {
-  name: 'HelloWorld',
+  name: 'Ponzliquid',
   data () {
     return {
       Ponz: 'Ponz',

@@ -21,7 +21,7 @@ export default {
     return {
       items: [
         { title: 'Discography', path: '/discography' },
-        { title: 'HelloWorld', path: '/' },
+        { title: 'Ponzliquid', path: '/' },
         { title: 'Patronage', path: '/patronage' }
       ]
     }
@@ -46,7 +46,7 @@ export default {
   /* padding: 0; */
   /* position: fixed; */
   /* background-color: #000000; */
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 ol {

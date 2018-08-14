@@ -22,6 +22,7 @@ import myheader from './components/myheader'
 // モーダル用コンポーネント
 import ModalAlert from './components/Modal/Alert'
 import store from './components/store/'
+// import Tweet from './components/twitter_emb'
 
 Vue.component('modalAlert', ModalAlert)
 

@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Ponzliquid from '@/components/Ponzliquid'
+import Discography from '@/components/Discography'
+import Patronage from '@/components/Patronage'
 
 Vue.use(Router)
 
@@ -8,8 +10,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Ponzliquid',
+      component: Ponzliquid
+    },
+    {
+      path: '/discography',
+      name: 'Discography',
+      component: Discography
+    },
+    {
+      path: '/patronage',
+      name: 'Patronage',
+      component: Patronage
     }
   ]
 })
