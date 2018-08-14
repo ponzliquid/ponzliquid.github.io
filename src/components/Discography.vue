@@ -16,14 +16,14 @@
       </div>
 
       <div class="yt">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LgoIK7bgdRo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    <!-- </div> -->
-      </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLd2KvZnOeVuh8tPWaPIlKaigHdADGn541" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
 
       <div class="spacer">
       </div>
 
       <div class="yt">
-        <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb_mylist/62908942" scrolling="no" frameborder="0"><a href="http://www.nicovideo.jp/mylist/62908942">【ニコニコ動画】</a></iframe>
+        <iframe width="320" height="160" src="http://ext.nicovideo.jp/thumb_user/8065114" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"></iframe>
       </div>
 
       <div class="spacer">
@@ -37,7 +37,7 @@ export default {
   name: 'Discography',
   data () {
     return {
-      pagetitle: 'Discography'
+      pagetitle: '0124'
     }
   }
 }
