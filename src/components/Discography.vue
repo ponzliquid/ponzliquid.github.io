@@ -23,7 +23,7 @@
       </div>
 
       <div class="yt">
-        <iframe width="320" height="160" src="http://ext.nicovideo.jp/thumb_user/8065114" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"></iframe>
+        <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm33603676" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm33603676">虚無仮説 feat.初音ミク</a></iframe>
       </div>
 
       <div class="spacer">
@@ -37,7 +37,7 @@ export default {
   name: 'Discography',
   data () {
     return {
-      pagetitle: '0124'
+      pagetitle: 'Discography'
     }
   }
 }
