@@ -23,7 +23,7 @@
       </div>
 
       <div class="yt">
-        <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb_mylist/62908942" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/mylist/62908942">【ニコニコ動画】</a></iframe>
+        <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb_mylist/62908942" scrolling="no" frameborder="0"><a href="http://www.nicovideo.jp/mylist/62908942">【ニコニコ動画】</a></iframe>
       </div>
 
       <div class="spacer">
