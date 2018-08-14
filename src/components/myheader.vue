@@ -1,7 +1,5 @@
 <template>
-  <div>
-  <div class="spacer">
-  <!-- <div class="header"> -->
+  <div id="container">
     <ol>
       <li :class="{'on' : isActive(item.title)}" v-for="(item, index) in items" :key=index>
          <router-link :to=item.path>
@@ -9,8 +7,6 @@
          </router-link>
       </li>
     </ol>
-  <!-- </div> -->
-  </div>
   </div>
 </template>
 
@@ -38,18 +34,17 @@ export default {
 </script>
 
 <style scoped>
-
-/*モニター全体に広げるヘッダー*/
-.spacer{
+#container{
   /* width: 100%; */
   height: 80px;
   /* padding: 0; */
   /* position: fixed; */
   /* background-color: #000000; */
-  opacity: 0.8;
+  opacity: 0.99;
 }
 
 ol {
+  /* pointer-events: none; */
   position: fixed;
   height: 50px;
   margin-left: -10px;
@@ -67,6 +62,7 @@ ol {
   /* text-align: center; */
   /* max-width: 400px; */
   /* padding: 10px; */
+  /* z-index: 2; */
 }
 
 li {

@@ -1,42 +1,49 @@
 <template>
   <div class="patron">
 
-    <h2>{{ pagetitle }}</h2>
+    <h1>{{ pagetitle }}</h1>
 
-    <div class="spacer">
-    </div>
+    <h2>{{ message_tw }}</h2>
 
     <div id="container">
 
-    <span>
-<!-- <a class="twitter-timeline" data-lang="en" href="https://twitter.com/TOMO70878254?ref_src=twsrc%5Etfw">Tweets by TOMO70878254</a> -->
-    <!-- <emb></emb> -->
-    <Timeline :id="'TOMO70878254'" :sourceType="'profile'" :options="{ tweetLimit: '2' }"/>
-    </span>
+      <span>
+        <Timeline :id="'TOMO70878254'" :sourceType="'profile'" :options="{ tweetLimit: '2' }"/>
+      </span>
 
-    <div class="spacer">
+      <h2>{{ message_map }}</h2>
+      <!-- <my-map :markers='[
+        {"lat":34.9787894,"lng":135.8999402}
+        ]'>
+      </my-map> -->
+
+      <div class="gmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13076.459150507137!2d135.8999402!3d34.9787894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d6abc683f4b9cbd!2z5Yqg6Jek5bGLIOOBq-OBvOasoeaclw!5e0!3m2!1sja!2sjp!4v1534225365434" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="spacer">
+      </div>
+
     </div>
-
-    <div class="spacer">
-    </div>
-
-    </div>
-
   </div>
 </template>
 
 <script>
-// import Vue from 'vue'
+import Vue from 'vue'
 // import Emb from '../components/twitter_emb'
 import Timeline from 'vue-tweet-embed/timeline'
+import MyMap from './services/MyMap'
 
+Vue.component('my-map', MyMap)
 // Vue.component('emb', Emb)
 
 export default {
   name: 'Patronage',
   data () {
     return {
-      pagetitle: 'Patronage'
+      pagetitle: 'Patronage',
+      message_tw: '🍜Delicious🍜',
+      message_map: '👇Visit!👇'
     }
   },
   components: {
@@ -92,27 +99,24 @@ a.icon {
 a:hover {
   color: #FED766;
 }
-.frame-wrapper__video {
+.gmap {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
-  z-index: -1;
+  /* z-index: -1; */
 }
-.frame-wrapper__video iframe {
+.gmap iframe {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  /* z-index: -1; */
 }
 #container {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 280px;
+  max-width: 400px;
   margin: 0 auto;
-  z-index: -1;
 }
 </style>

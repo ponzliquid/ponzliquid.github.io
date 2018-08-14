@@ -1,15 +1,9 @@
 <template>
   <div id="app">
-      <!-- <div class="wrap-all">
-        <div class="wrap-all-inner">
-          <div class="container-contents">
-            <div class="content wrap"> -->
-              <myheader></myheader>
-              <router-view></router-view>
-            <!-- </div>
-          </div>
+        <div class="overpanel">
+          <myheader></myheader>
         </div>
-      </div> -->
+        <router-view></router-view>
       <div id="modals">
         <component v-for="(modal) in modals" :is="modal.component"  :key="modal.id" :params="modal.params"></component>
       </div>
@@ -51,6 +45,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #EFF1F3;
-  /* margin: 10px; */
+}
+.overpanel {
+    position: relative;
+    opacity: 0.9;
 }
 </style>

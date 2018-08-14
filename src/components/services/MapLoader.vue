@@ -18,14 +18,14 @@ import GoogleMapsApiLoader from 'google-maps-api-loader'
 import MapProvider from './MapProvider'
 
 export default {
-  props:{
+  props: {
     mapConfig: Object,
     apiKey: String
   },
   components: {
     MapProvider
   },
-  data(){
+  data () {
     return {
       google: null,
       map: null
@@ -40,7 +40,7 @@ export default {
     })
   },
   methods: {
-    initializeMap (){
+    initializeMap () {
       const mapContainer = this.$el.querySelector('#map') // point 1
       const { Map } = this.google.maps
       this.map = new Map(mapContainer, this.mapConfig)
@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
 #map {
-  height: 100vh;
+  height: 50vh;
   width: 100%;
 }
 </style>

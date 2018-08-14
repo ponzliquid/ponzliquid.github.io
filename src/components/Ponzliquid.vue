@@ -135,7 +135,7 @@ a:hover {
   height: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .frame-wrapper__video iframe {
   width: 100%;
@@ -143,11 +143,11 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  /* z-index: -1; */
 }
 #container {
-  max-width: 480px;
+  max-width: 400px;
   margin: 0 auto;
-  z-index: -1;
+  /* z-index: -1; */
 }
 </style>
