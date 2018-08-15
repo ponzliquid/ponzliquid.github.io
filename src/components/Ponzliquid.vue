@@ -61,7 +61,7 @@
 
 <script>
 // import Modal from './Modal.vue'
-import modal from '../components/services/modal'
+import modal from './Modal/modal'
 export default {
   name: 'Ponzliquid',
   data () {

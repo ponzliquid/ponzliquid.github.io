@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="overpanel">
-      <myheader></myheader>
+      <ponzheader></ponzheader>
     </div>
 
     <router-view></router-view>
@@ -19,7 +19,7 @@
 
 <script>
 import Vue from 'vue'
-import myheader from './components/myheader'
+import ponzheader from './components/ponzheader'
 import ponzfooter from './components/ponzfooter'
 // モーダル用コンポーネント
 import ModalAlert from './components/Modal/Alert'
@@ -31,7 +31,7 @@ Vue.component('modalAlert', ModalAlert)
 export default {
   name: 'App',
   components: {
-    myheader,
+    ponzheader,
     ponzfooter,
     ModalAlert
   },

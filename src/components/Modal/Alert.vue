@@ -21,7 +21,7 @@
     </transition>
 </template>
 <script>
-import modal from '../services/modal'
+import modal from './modal'
 
 export default {
   props: ['params'],
