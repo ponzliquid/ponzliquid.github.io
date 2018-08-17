@@ -30,7 +30,7 @@
 
 <script>
 // import Vue from 'vue'
-import Timeline from 'vue-tweet-embed/timeline'
+import { Tweet, Moment, Timeline } from 'vue-tweet-embed'
 // import MyMap from './services/MyMap'
 
 // Vue.component('my-map', MyMap)
@@ -45,7 +45,9 @@ export default {
     }
   },
   components: {
-    'Timeline': Timeline
+    'Timeline': Timeline,
+    'Tweet': Tweet,
+    'Moment': Moment
   }
 }
 </script>
