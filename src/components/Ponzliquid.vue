@@ -1,15 +1,13 @@
 <template>
   <div>
 
-    <!-- <div id="container"> -->
-      <img src="../assets/ponz_by_40kino.png" v-on:mouseover="mouseOver">
-    <!-- </div> -->
+    <img src="../assets/ponz_by_40kino.png" v-on:mouseover="mouseOver">
 
     <h1>{{ Ponz }}</h1>
 
     <h3>{{ profile }}</h3>
     <div id="container">
-      <div class="frame-wrapper__video">
+      <div class="yt">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLd2KvZnOeVuh8tPWaPIlKaigHdADGn541" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
       </div>
     </div>
@@ -31,8 +29,6 @@
           class="icon"
         >
         <div>
-          <!-- <i class="fab fa-discord fa-2x" @click="showModal = true"/> -->
-          <!-- <modal v-if="showModal" @close="showModal = false"></modal> -->
           <i class="fab fa-discord fa-2x" @click="openAlertModal(discord_msg)" />
         </div>
         </a>
@@ -60,8 +56,7 @@
 </template>
 
 <script>
-// import Modal from './Modal.vue'
-import modal from '../components/services/modal'
+import modal from './Modal/modal'
 export default {
   name: 'Ponzliquid',
   data () {
@@ -77,22 +72,18 @@ export default {
     }
   },
   components: {
-    // Modal,
     modal
   },
   methods: {
     mouseOver: function () {
-      console.log('hover/tap')
     },
     openAlertModal (message) {
-      // console.log(message)
       modal.alert(message)
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 h1{
@@ -135,7 +126,6 @@ a:hover {
   height: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
-  /* z-index: -1; */
 }
 .frame-wrapper__video iframe {
   width: 100%;
@@ -143,11 +133,23 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  /* z-index: -1; */
+}
+.yt {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.yt iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 #container {
   max-width: 400px;
   margin: 0 auto;
-  /* z-index: -1; */
 }
 </style>
