@@ -3,9 +3,6 @@
 
     <h1>{{ pagetitle }}</h1>
 
-    <!-- <div class="spacer">
-    </div> -->
-
     <div id="container">
 
       <div class="sc">
@@ -43,7 +40,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 .spacer{

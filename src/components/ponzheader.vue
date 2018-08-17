@@ -24,9 +24,6 @@ export default {
   },
   methods: {
     isActive: function (name) {
-      if (name === this.$route.name) {
-        console.log('ONAJI')
-      }
       return this.$route.name === name
     }
   }
@@ -35,16 +32,11 @@ export default {
 
 <style scoped>
 #container{
-  /* width: 100%; */
   height: 80px;
-  /* padding: 0; */
-  /* position: fixed; */
-  /* background-color: #000000; */
   opacity: 0.9;
 }
 
 ol {
-  /* pointer-events: none; */
   position: fixed;
   height: 80px;
   margin-left: -10px;
@@ -53,16 +45,8 @@ ol {
   display:flex;
   justify-content: center;
   padding: 0;
-  /* margin: 10px; */
   list-style: none;
   background-color: #000000;
-  /* opacity: 0.8; */
-
-  /* margin: auto; */
-  /* text-align: center; */
-  /* max-width: 400px; */
-  /* padding: 10px; */
-  /* z-index: 2; */
 }
 
 li {
@@ -75,13 +59,6 @@ li {
   background-color: #000000;
   border-radius: 5px;
   position: relative;
-  /* opacity: 0.8; */
-
-  /* margin: auto; */
-  /* text-align: center; */
-  /* max-width: 800px; */
-  /* padding: 10px; */
-
 }
 
 li:hover {

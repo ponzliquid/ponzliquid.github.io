@@ -29,13 +29,11 @@
 </template>
 
 <script>
-import Vue from 'vue'
-// import Emb from '../components/twitter_emb'
+// import Vue from 'vue'
 import Timeline from 'vue-tweet-embed/timeline'
-import MyMap from './services/MyMap'
+// import MyMap from './services/MyMap'
 
-Vue.component('my-map', MyMap)
-// Vue.component('emb', Emb)
+// Vue.component('my-map', MyMap)
 
 export default {
   name: 'Patronage',
@@ -47,21 +45,15 @@ export default {
     }
   },
   components: {
-    // 'emb': Emb
     'Timeline': Timeline
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 .spacer{
-  /* width: 100%; */
   height: 80px;
-  /* padding: 0; */
-  /* position: fixed; */
-  /* background-color: #000000; */
   opacity: 0.8;
 }
 
@@ -105,7 +97,6 @@ a:hover {
   height: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
-  /* z-index: -1; */
 }
 .gmap iframe {
   width: 100%;
@@ -113,7 +104,6 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  /* z-index: -1; */
 }
 #container {
   max-width: 400px;

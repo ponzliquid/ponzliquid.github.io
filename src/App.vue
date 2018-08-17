@@ -21,10 +21,8 @@
 import Vue from 'vue'
 import ponzheader from './components/ponzheader'
 import ponzfooter from './components/ponzfooter'
-// モーダル用コンポーネント
 import ModalAlert from './components/Modal/Alert'
 import store from './components/store/'
-// import Tweet from './components/twitter_emb'
 
 Vue.component('modalAlert', ModalAlert)
 
@@ -45,13 +43,8 @@ export default {
 
 <style>
 body{
-  /* height: 100%; */
   background-color: #272727;
   color: #EFF1F3;
-
-  /* min-height: 100%;
-  display: flex;
-  flex-direction: column; */
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -72,7 +65,6 @@ body{
 .ft {
   margin-left: -5px;
   margin-top: auto;
-  /* background-color: #000000; */
   opacity: 0.9;
 }
 </style>

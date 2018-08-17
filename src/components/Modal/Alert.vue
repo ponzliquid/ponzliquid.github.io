@@ -5,13 +5,11 @@
                 <div class="modal-container" v-on:click.stop="">
                     <div class="modal-body">
                         <slot name="body">
-                            <!-- {{ params.msg }} -->
                             <span v-html="params.msg"></span>
                         </slot>
                     </div>
                     <div class="modal-footer">
                         <slot name="footer">
-                            <!-- <button type="button" class="btn btn04 w-auto" @click="closeModal()">閉じる</button> -->
                             <i class="fas fa-times-circle fa-2x" @click="closeModal()" />
                         </slot>
                     </div>
@@ -20,9 +18,9 @@
         </div>
     </transition>
 </template>
+
 <script>
 import modal from './modal'
-
 export default {
   props: ['params'],
   methods: {
