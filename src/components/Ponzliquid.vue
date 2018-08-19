@@ -12,6 +12,14 @@
       </div>
     </div>
 
+    <div class="spacer">
+    </div>
+    <h4>{{ skill_music }}</h4>
+    <h4>{{ skill_prog }}</h4>
+    <h4>{{ skill_tool }}</h4>
+    <div class="spacer">
+    </div>
+
     <!-- <h2>{{ title_contact }}</h2> -->
     <ul>
         <li>
@@ -66,6 +74,9 @@ export default {
       title_dev: 'Dev',
       title_contact: 'Contact',
       profile: 'Vocaloid Producer, Trance Composer, Remixer',
+      skill_prog: 'C, Verilog-HDL, Python, Unity-C#, Vue.js',
+      skill_music: 'Piano/Electone, Perfect pitch, Voice imitation',
+      skill_tool: 'Ableton Live, Garageband, Piapro Studio, Vocaloid Editor 5, Adobe Premiere',
       showModal: false,
       discord_msg: 'UserID: <br><br> #2732<br>',
       email_msg: 'ponzliquid <br> at <br> gmail.com'
@@ -100,6 +111,11 @@ h3{
   font-weight: normal;
   font-size: medium;
   margin-bottom: 48px;
+  color: #696773;
+}
+h4{
+  font-weight: lighter;
+  font-size: small;
   color: #696773;
 }
 ul {
@@ -152,4 +168,9 @@ a:hover {
   max-width: 400px;
   margin: 0 auto;
 }
+.spacer{
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
 </style>
