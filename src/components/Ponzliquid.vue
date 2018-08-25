@@ -7,9 +7,12 @@
 
     <h3>{{ profile }}</h3>
     <div id="container">
-      <div class="yt">
+      <!-- <div class="yt">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLd2KvZnOeVuh8tPWaPIlKaigHdADGn541" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
-      </div>
+      </div> -->
+      <span>
+        <Tweet :id="'1031516795952230400'"></Tweet>
+      </span>
     </div>
 
     <div class="spacer">
@@ -65,6 +68,7 @@
 
 <script>
 import modal from './Modal/modal'
+import { Tweet, Moment, Timeline } from 'vue-tweet-embed'
 export default {
   name: 'Ponzliquid',
   data () {
@@ -83,7 +87,10 @@ export default {
     }
   },
   components: {
-    modal
+    modal,
+    'Timeline': Timeline,
+    'Tweet': Tweet,
+    'Moment': Moment
   },
   methods: {
     mouseOver: function () {
