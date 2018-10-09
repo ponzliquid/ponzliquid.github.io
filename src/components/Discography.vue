@@ -5,6 +5,7 @@
 
     <div id="container">
 
+      <h2>{{ message_sc }}</h2>
       <div class="sc">
         <iframe width="800" height="450" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/77993825&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
       </div>
@@ -12,19 +13,22 @@
       <div class="spacer">
       </div>
 
+      <h2>{{ message_yt }}</h2>
       <div class="yt">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLd2KvZnOeVuh8tPWaPIlKaigHdADGn541" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+      </div>
 
       <div class="spacer">
       </div>
 
+      <h2>{{ message_nc }}</h2>
       <div class="yt">
-        <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm33603676" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm33603676">虚無仮説 feat.初音ミク</a></iframe>
+        <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb_mylist/63019592" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/mylist/63019592">【ニコニコ動画】</a></iframe>        <!-- <iframe width="320" height="160" src="https://ext.nicovideo.jp/thumb_user/8065114" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"></iframe> -->
       </div>
 
       <div class="spacer">
       </div>
+
     </div>
   </div>
 </template>
@@ -34,7 +38,11 @@ export default {
   name: 'Discography',
   data () {
     return {
-      pagetitle: 'Discography'
+      pagetitle: 'Discography',
+      message_sfcd001: '👇Trance Album👇',
+      message_sc: '👇SoundCloud Tracks👇',
+      message_yt: '👇YouTube Playlist👇',
+      message_nc: '👇NicoNico Tracks👇'
     }
   }
 }
@@ -51,6 +59,7 @@ h1{
   display: center;
   font-weight: normal;
   font-size: xx-large;
+  margin-bottom: 20px;
 }
 h2{
   font-weight: normal;
