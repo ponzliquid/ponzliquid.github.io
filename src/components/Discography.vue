@@ -42,7 +42,7 @@ export default {
       message_sfcd001: '👇Trance Album👇',
       message_sc: '👇SoundCloud Tracks👇',
       message_yt: '👇YouTube Playlist👇',
-      message_nc: '👇NicoNico Tracks👇'
+      message_nc: '👇NicoNico Mylist👇'
     }
   }
 }
