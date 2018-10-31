@@ -29,6 +29,13 @@
       <div class="spacer">
       </div>
 
+      <h2>{{ message_pixiv }}</h2>
+      <div class="yt">
+        <a href="https://www.pixiv.net/fanbox/creator/20876745">
+        <img src="../assets/2dcode.png" width=40%>
+        </a>
+      </div>
+
     </div>
   </div>
 </template>
@@ -42,7 +49,8 @@ export default {
       message_sfcd001: '👇Trance Album👇',
       message_sc: '👇SoundCloud Tracks👇',
       message_yt: '👇YouTube Playlist👇',
-      message_nc: '👇NicoNico Mylist👇'
+      message_nc: '👇NicoNico Mylist👇',
+      message_pixiv: '👇Click/Scan to Donate me!👇'
     }
   }
 }
