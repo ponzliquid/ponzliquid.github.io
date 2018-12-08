@@ -8,7 +8,7 @@
       <h2>{{ message_sfcd001 }}</h2>
       <!-- <div class="yt"> -->
           <a href="https://ponzliquid.fanlink.to/ascension">
-        <img src="../assets/SFCD-001.png" width=100%>
+        <img src="../assets/SFCD-001.jpg" width=100%>
         </a>
       <!-- </div> -->
 
