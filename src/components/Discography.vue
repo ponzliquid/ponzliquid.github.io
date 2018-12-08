@@ -5,6 +5,16 @@
 
     <div id="container">
 
+      <h2>{{ message_sfcd001 }}</h2>
+      <!-- <div class="yt"> -->
+          <a href="https://ponzliquid.fanlink.to/ascension">
+        <img src="../assets/SFCD-001.png" width=100%>
+        </a>
+      <!-- </div> -->
+
+      <div class="spacer">
+      </div>
+
       <h2>{{ message_sc }}</h2>
       <div class="sc">
         <iframe width="800" height="450" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/77993825&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
