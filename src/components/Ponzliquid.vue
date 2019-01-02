@@ -7,9 +7,6 @@
 
     <h3>{{ profile }}</h3>
     <div id="container">
-      <!-- <div class="yt">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLd2KvZnOeVuh8tPWaPIlKaigHdADGn541" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
-      </div> -->
       <span>
         <Tweet :id="'1031516795952230400'"></Tweet>
       </span>
@@ -17,9 +14,10 @@
 
     <div class="spacer">
     </div>
-    <h4>{{ skill_music }}</h4>
-    <h4>{{ skill_prog }}</h4>
+    <!-- <h4>{{ skill_music }}</h4> -->
+    <h4>{{ skill_program }}</h4>
     <h4>{{ skill_tool }}</h4>
+    <h4>{{ skill_major }}</h4>
     <div class="spacer">
     </div>
 
@@ -78,9 +76,10 @@ export default {
       title_dev: 'Dev',
       title_contact: 'Contact',
       profile: 'Vocaloid Producer, Trance Composer, Remixer',
-      skill_prog: 'C, Unity-C#, Verilog-HDL, Python, Vue.js',
-      skill_music: 'Piano, Perfect pitch, Voice imitation',
-      skill_tool: 'Ableton Live, Garageband, Piapro Studio, Vocaloid Editor 5, Adobe Premiere',
+      skill_program: 'ASNI-C, Unity-C#, Verilog-HDL, Python3, Vue.js',
+      // skill_music: 'Piano, Perfect pitch, Voice imitation',
+      skill_major: 'Reconfigurable Computing, Heterogeneous Computing, High-level Synthesis',
+      skill_tool: 'Ableton Live, Garageband, Studio One 3, Piapro Studio, Vocaloid Editor 5, Adobe Premiere',
       showModal: false,
       discord_msg: 'UserID: <br><br> #2732<br>',
       email_msg: 'ponzliquid <br> at <br> gmail.com'

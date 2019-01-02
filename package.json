@@ -25,7 +25,7 @@
     "i": "^0.3.6",
     "npm": "^6.3.0",
     "vue": "^2.5.2",
-    "vue-analytics": "^5.13.0",
+    "vue-analytics": "^5.16.1",
     "vue-devtools": "^4.1.4",
     "vue-icons": "^2.0.0",
     "vue-router": "^3.0.1",
