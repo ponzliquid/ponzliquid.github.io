@@ -9,7 +9,7 @@ export default {
   name: 'ponzfooter',
   data () {
     return {
-      copyright: '© 2018 Ponzliquid'
+      copyright: '© 2019 Ponzliquid'
     }
   },
   methods: {
