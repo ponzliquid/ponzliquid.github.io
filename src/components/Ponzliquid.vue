@@ -15,9 +15,9 @@
     <div class="spacer">
     </div>
     <!-- <h4>{{ skill_music }}</h4> -->
+    <h4>{{ skill_major }}</h4>
     <h4>{{ skill_program }}</h4>
     <h4>{{ skill_tool }}</h4>
-    <h4>{{ skill_major }}</h4>
     <div class="spacer">
     </div>
 
@@ -75,11 +75,11 @@ export default {
       title_workd: 'Works',
       title_dev: 'Dev',
       title_contact: 'Contact',
-      profile: 'Vocaloid Producer, Trance Composer, Remixer',
+      profile: 'Vocaloid Producer & Composer',
       skill_program: 'ASNI-C, Unity-C#, Verilog-HDL, Python3, Vue.js',
       // skill_music: 'Piano, Perfect pitch, Voice imitation',
       skill_major: 'Reconfigurable Computing, Heterogeneous Computing, High-level Synthesis',
-      skill_tool: 'Ableton Live, Garageband, Studio One 3, Piapro Studio, Vocaloid Editor 5, Adobe Premiere',
+      skill_tool: 'Ableton Live 10, Garageband, Studio One 3, Piapro Studio, Vocaloid Editor 5',
       showModal: false,
       discord_msg: 'UserID: <br><br> #2732<br>',
       email_msg: 'ponzliquid <br> at <br> gmail.com'
