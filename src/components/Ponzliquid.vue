@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <img src="../assets/ponz_by_40kino.png" v-on:mouseover="mouseOver">
+    <img src="../assets/ponz_by_40kino.png" v-on:mouseover="mouseOver" width="100" height="100">
 
     <h1>{{ Ponz }}</h1>
 
@@ -14,14 +14,28 @@
 
     <div class="spacer">
     </div>
-    <!-- <h4>{{ skill_music }}</h4> -->
-    <h4>{{ skill_major }}</h4>
-    <h4>{{ skill_program }}</h4>
-    <h4>{{ skill_tool }}</h4>
+    <!-- <h4>{{ skill_major }}</h4> -->
+    <!-- <h4>{{ skill_program }}</h4> -->
+    <!-- <h4>{{ skill_tool }}</h4> -->
     <div class="spacer">
     </div>
 
-    <!-- <h2>{{ title_contact }}</h2> -->
+    <h2>
+      <!-- See 👉 -->
+      See my
+      <!-- See ➡ -->
+      <!-- <br> -->
+      <router-link to="/discography">
+      Discography
+      </router-link>
+      <!-- 👈 -->
+      <br>
+    </h2>
+
+    <div class="spacer">
+    </div>
+
+    <h2>{{ title_contact }}</h2>
     <ul>
         <li>
         <a
@@ -72,16 +86,14 @@ export default {
   data () {
     return {
       Ponz: 'Ponz',
-      title_workd: 'Works',
-      title_dev: 'Dev',
-      title_contact: 'Contact',
-      profile: 'Vocaloid Producer & Composer',
+      title_contact: '👇Contact👇',
+      profile: 'Vocaloid Producer, Composer',
       skill_program: 'ASNI-C, Unity-C#, Verilog-HDL, Python3, Vue.js',
       // skill_music: 'Piano, Perfect pitch, Voice imitation',
       skill_major: 'Reconfigurable Computing, Heterogeneous Computing, High-level Synthesis',
       skill_tool: 'Ableton Live 10, Garageband, Studio One 3, Piapro Studio, Vocaloid Editor 5',
       showModal: false,
-      discord_msg: 'UserID: <br><br> #2732<br>',
+      discord_msg: 'UserID: <br><br> ponzliquid#2732<br>',
       email_msg: 'ponzliquid <br> at <br> gmail.com'
     }
   },

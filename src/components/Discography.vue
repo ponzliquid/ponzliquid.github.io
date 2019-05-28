@@ -5,12 +5,18 @@
 
     <div id="container">
 
+      <!-- <h2>{{ message_sfcd002 }}</h2>
+      <div class="td">
+        <iframe src="https://ponzliquid.fanlink.to/empty-world?embed=true" allowfullscreen style="border-radius:3px" frameborder="0" height="800" width="480"></iframe>
+      </div> -->
+
       <h2>{{ message_sfcd001 }}</h2>
-      <!-- <div class="yt"> -->
-          <a href="https://ponzliquid.fanlink.to/ascension">
+          <!-- <a href="https://ponzliquid.fanlink.to/ascension">
         <img src="../assets/SFCD-001.jpg" width=100%>
-        </a>
-      <!-- </div> -->
+        </a> -->
+        <div class="td">
+          <iframe src="https://ponzliquid.fanlink.to/ascension?embed=true" allowfullscreen style="border-radius:3px" frameborder="0" height="800" width="480"></iframe>
+        </div>
 
       <div class="spacer">
       </div>
@@ -33,7 +39,8 @@
 
       <h2>{{ message_nc }}</h2>
       <div class="yt">
-        <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb_mylist/63019592" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/mylist/63019592">【ニコニコ動画】</a></iframe>        <!-- <iframe width="320" height="160" src="https://ext.nicovideo.jp/thumb_user/8065114" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"></iframe> -->
+        <!-- <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb_mylist/63019592" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/mylist/63019592">【ニコニコ動画】</a></iframe>        <iframe width="320" height="160" src="https://ext.nicovideo.jp/thumb_user/8065114" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"></iframe> -->
+        <iframe width="320" height="160" src="https://ext.nicovideo.jp/thumb_user/8065114" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"></iframe>
       </div>
 
       <div class="spacer">
@@ -56,10 +63,11 @@ export default {
   data () {
     return {
       pagetitle: 'Discography',
-      message_sfcd001: '👇Trance Album👇',
-      message_sc: '👇SoundCloud Tracks👇',
-      message_yt: '👇YouTube Playlist👇',
-      message_nc: '👇NicoNico Mylist👇',
+      message_sfcd001: 'Trance Album',
+      message_sfcd002: 'Vocaloid Album',
+      message_sc: 'SoundCloud',
+      message_yt: 'YouTube',
+      message_nc: 'NicoNico',
       message_pixiv: '👇Click/Scan to Donate me!👇'
     }
   }
@@ -107,6 +115,20 @@ a.icon {
 }
 a:hover {
   color: #FED766;
+}
+
+.td {
+  position:relative;
+  width:100%;
+  height:0;
+  padding-top:100%;
+}
+.td iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
 .sc {
