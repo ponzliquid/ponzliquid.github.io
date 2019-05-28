@@ -15,7 +15,7 @@
         <img src="../assets/SFCD-001.jpg" width=100%>
         </a> -->
         <div class="td">
-          <iframe src="https://ponzliquid.fanlink.to/ascension?embed=true" allowfullscreen style="border-radius:3px" frameborder="0" height="800" width="480"></iframe>
+          <iframe src="https://ponzliquid.fanlink.to/ascension?embed=true" allowfullscreen style="border-radius:3px" frameborder="0"></iframe>
         </div>
 
       <div class="spacer">
