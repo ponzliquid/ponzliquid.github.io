@@ -7,16 +7,13 @@
 
       <!-- <h2>{{ message_sfcd002 }}</h2>
       <div class="td">
-        <iframe src="https://ponzliquid.fanlink.to/empty-world?embed=true" allowfullscreen style="border-radius:3px" frameborder="0" height="800" width="480"></iframe>
+        <iframe src="https://ponzliquid.fanlink.to/empty-world?embed=true" style="border-radius:3px" frameborder="0" ></iframe>
       </div> -->
 
       <h2>{{ message_sfcd001 }}</h2>
-        <!-- <a href="https://ponzliquid.fanlink.to/ascension">
-      <img src="../assets/SFCD-001.jpg" width=100%>
-      </a> -->
-      <!-- <div class="td"> -->
-        <iframe src="https://ponzliquid.fanlink.to/ascension?embed=true" style="border-radius:3px" frameborder="0" height="380" width="380"></iframe>
-      <!-- </div> -->
+      <div class="td">
+        <iframe src="https://ponzliquid.fanlink.to/ascension?embed=true" frameborder="0"></iframe>
+      </div>
 
       <div class="spacer">
       </div>
@@ -40,7 +37,7 @@
       <h2>{{ message_nc }}</h2>
       <div class="yt">
         <!-- <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb_mylist/63019592" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/mylist/63019592">【ニコニコ動画】</a></iframe>        <iframe width="320" height="160" src="https://ext.nicovideo.jp/thumb_user/8065114" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"></iframe> -->
-        <iframe width="320" height="160" src="https://ext.nicovideo.jp/thumb_user/8065114" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"></iframe>
+        <iframe src="https://ext.nicovideo.jp/thumb_user/8065114" scrolling="yes" style="border:solid 1px #CCC;" frameborder="0"></iframe>
       </div>
 
       <div class="spacer">
@@ -120,8 +117,10 @@ a:hover {
 .td {
   position:relative;
   width:100%;
-  height:0;
-  padding-top:100%;
+  padding-top:120%;
+  padding-bottom:10%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .td iframe{
   position:absolute;
@@ -135,7 +134,9 @@ a:hover {
   position:relative;
   width:100%;
   height:0;
-  padding-top:85%;
+  padding-top:100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .sc iframe{
   position:absolute;
