@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div class="overpanel">
+    <!-- <div class="overpanel">
       <ponzheader></ponzheader>
-    </div>
+    </div> -->
 
     <router-view></router-view>
 
@@ -19,7 +19,7 @@
 
 <script>
 import Vue from 'vue'
-import ponzheader from './components/ponzheader'
+// import ponzheader from './components/ponzheader'
 import ponzfooter from './components/ponzfooter'
 import ModalAlert from './components/Modal/Alert'
 import store from './components/store/'
@@ -29,7 +29,7 @@ Vue.component('modalAlert', ModalAlert)
 export default {
   name: 'App',
   components: {
-    ponzheader,
+    // ponzheader,
     ponzfooter,
     ModalAlert
   },
