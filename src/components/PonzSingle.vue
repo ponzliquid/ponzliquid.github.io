@@ -47,7 +47,7 @@
         :speed="1000"
         :autoplay="true"
         :autoplayTimeout="5000"
-        :autoplayHoverPause="false"
+        :autoplayHoverPause="true"
         :loop="true"
         paginationPosition="top"
         paginationActiveColor="#efefef"
