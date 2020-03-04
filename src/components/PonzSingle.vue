@@ -65,7 +65,8 @@
         </slide>
         <slide>
              <div id="car">
-                <span><Tweet :id="'1144217469311078402'"></Tweet></span>
+                <!-- <span><Tweet :id="'1144217469311078402'"></Tweet></span> -->
+                <span><Tweet :id="'1222631286520479744'"></Tweet></span>
             </div>
         </slide>
         <slide>
@@ -80,7 +81,8 @@
         </slide>
         <slide>
              <div id="car">
-                <span><Tweet :id="'1165467116222345216'"></Tweet></span>
+                <span><Tweet :id="'1234005569331032064'"></Tweet></span>
+                <!-- <span><Tweet :id="'1165467116222345216'"></Tweet></span> -->
             </div>
         </slide>
         </carousel>
@@ -93,24 +95,40 @@
     <div class="spacer"></div>
 
     <div id="container">
-      <!-- <h2>{{ message_sfcd003 }}</h2>
+      <h2>{{ message_kyomukasetsu }}</h2>
+      <div class="td">
+        <iframe src="https://ponzliquid.fanlink.to/kyomu-kasetsu?embed=true" style="border-radius:3px" frameborder="0" ></iframe>
+      </div>
+
+      <div class="spacer"></div>
+
+      <h2>{{ message_sfcd004 }}</h2>
+      <div class="td">
+        <iframe src="https://ponzliquid.fanlink.to/3ndless1ove?embed=true" style="border-radius:3px" frameborder="0" ></iframe>
+      </div>
+
+      <div class="spacer"></div>
+
+      <h2>{{ message_sfcd003 }}</h2>
       <div class="td">
         <iframe src="https://ponzliquid.fanlink.to/prismlife?embed=true" style="border-radius:3px" frameborder="0" ></iframe>
-      </div> -->
+      </div>
 
-      <h2>{{ message_sfcd002 }}</h2>
+      <div class="spacer"></div>
+
+      <!-- <h2>{{ message_sfcd002 }}</h2>
       <div class="td">
         <iframe src="https://ponzliquid.fanlink.to/empty-world?embed=true" style="border-radius:3px" frameborder="0" ></iframe>
       </div>
 
-      <div class="spacer"></div>
+      <div class="spacer"></div> -->
 
-      <h2>{{ message_sfcd001 }}</h2>
+      <!-- <h2>{{ message_sfcd001 }}</h2>
       <div class="td">
         <iframe src="https://ponzliquid.fanlink.to/ascension?embed=true" frameborder="0"></iframe>
       </div>
 
-      <div class="spacer"></div>
+      <div class="spacer"></div> -->
 
       <h2>{{ message_sc }}</h2>
       <div class="sc">
@@ -164,6 +182,8 @@ export default {
       message_sfcd001: '▼ Trance Album ▼',
       message_sfcd002: '▼ Vocaloid EP ▼',
       message_sfcd003: '▼ MikuTrance EP ▼',
+      message_sfcd004: '▼ MikuTrance EP ▼',
+      message_kyomukasetsu: '▼ Vocaloid Single ▼',
       message_sc: '▼ SoundCloud ▼',
       message_yt: '▼ YouTube ▼',
       message_nc: '▼ NicoNico ▼'
